@@ -73,9 +73,11 @@ print(number_of_slice*price)
 # -complex number
 # -Zero (0)
 
-value = eval(input("Enter the value"))
+value = eval(input("Enter the value: "))
 
-if isinstance(value, int):
+if value==0:
+    print("Zero (0)")
+elif isinstance(value, int):
     print("real number")
 elif isinstance(value, float):
     print("float number")
@@ -83,7 +85,5 @@ elif isinstance(value, string):
     print("String")
 elif isinstance(value, complex):
     print("complex number")
-elif value==0:
-    print("Zero (0)")
 else:
     print("enter correct value")
