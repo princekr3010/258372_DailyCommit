@@ -25,18 +25,3 @@ def fun():
 
 fun()
 
-
-value = eval(input("Enter the value: "))
-
-if value == 0:
-    print("Zero (0)")
-elif isinstance(value, int):
-    print("real number")
-elif isinstance(value, float):
-    print("float number")
-elif isinstance(value, str):
-    print("String")
-elif isinstance(complex):
-    print("complex number")
-else:
-    print("enter correct value")
